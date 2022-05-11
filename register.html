@@ -29,74 +29,64 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#services">Acasă</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#services">Acasă</a></li>-->
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Parteneri</a></li>
                     <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Sesiuni</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Paneluri de discuții</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacte</a></li>
+
+                    <!-- <li class="nav-item"><a class="nav-link " onclick="document.getElementById('id01').style.display='block'">Înregistrare</a></li>
+                   -->
+                    <li class="nav-item"><button class="btn btn-outline-light me-2" onclick="document.getElementById('id01').style.display='block'">ÎNREGISTRARE</button></li>
                 </ul>
 
                 <!-- Inregistrare-->
                 <!-- Button to open the modal -->
-                <button class="btn btn-outline-light me-2" onclick="document.getElementById('id01').style.display='block'">Înregistrare</button>
+
                 <!-- The Modal (contains the Sign Up form) -->
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
                     <div class="card bg-light">
-                        <article class="card-body mx-auto" style="max-width: 400px;">
+                        <article class="card-body mx-auto">
                             <h4 class="card-title mt-3 text-center">Înregistrare la eveniment!</h4>
                             <p class="text-center">Complectați cu atențiune fiecare formular</p>
                             <form name="google-sheet">
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <input name="name" class="form-control" placeholder="Nume Prenume" type="text">
                                 </div>
                                 <!-- form-group// -->
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <input name="institution" class="form-control" placeholder="Instituția de învățământ: " type="text">
                                 </div>
                                 <!-- form-group// -->
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <input name="region" class="form-control" placeholder="Raion/Regiune" type="text">
                                 </div>
                                 <!-- form-group// -->
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <input name="place" class="form-control" placeholder="Localitatea (satul/orașul)" type="text">
                                 </div>
                                 <!-- form-group// -->
 
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fas fa-id-card"></i></span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <input name="phone" class="form-control" placeholder="Număr de contact:" type="text">
                                 </div>
                                 <!-- form-group// -->
 
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <input name="email" class="form-control" placeholder="Adresă de e-mail: " type="email">
                                 </div>
                                 <!-- form-group// -->
 
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <select name="transport" id="day" onchange="myFunction()" class="form-control">
                                         <option selected="" disabled> Aveți nevoie de transport pentru a vă deplasa la eveniment:</option>
                                         <option value="da">Da</option>
@@ -110,9 +100,7 @@
                                 <!-- form-group// -->
 
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <select name="session" id="day" onchange="myFunction()" class="form-control">
                                         <option selected="" disabled> Selectați sesiunea la care doriți să participați:</option>
                                         <option value="Minecraft în STEM (11:00 - 12:00; 13:30 - 14:30)">Minecraft în STEM (11:00 - 12:00; 13:30 - 14:30)</option>
@@ -130,15 +118,16 @@
                                 <!-- form-group// -->
 
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                                    </div>
+                                    <!--aici au fost iconite pentru inregistrare-->
                                     <select name="discussion" id="day" onchange="myFunction()" class="form-control">
                                         <option selected="" disabled> Selectați panelul de discuții la care doriți să participați:</option>
                                         <option value="“Teaching for the future” (14:00 - 15:00)">“Teaching for the future” (14:00 - 15:00)</option>
                                         <option value="Panel de discuții “Clasa Inversată” (15:00 - 16:00)">Panel de discuții “Clasa Inversată” (15:00 - 16:00)</option>
                                     </select>
+
                                 </div>
+                                <br></br>
+
 
 
                                 <!-- form-group end.// -->
@@ -185,7 +174,48 @@
             <br></br><br></br><br></br><br></br><br></br><br></br>
             <div class="masthead-heading text-uppercase">EDTECH MOLDOVA 2022
                 <div class="masthead-subheading">Learn/ Grow/ Innovate!</div>
+
+
+                <!-- countdown -->
+                <!-- Display the countdown timer in an element -->
+                <p id="demo"></p>
+
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("May 24, 2022 11:00:00").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id="demo"
+                        document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                            minutes + "m " + seconds + "s ";
+
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>
+                <!-- pana aici-->
             </div>
+
+
+
+
 
             <a class="btn btn-primary btn-xl text-uppercase" onclick="document.getElementById('id01').style.display='block'">Înregistrează-te</a>
 
@@ -261,7 +291,8 @@
 
                             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
                                 <div class="agenda">
-                                    <p class=" my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00</span> -Cuvânt de salut (Ana Chirița, Directoare Proiecte Strategice „Tekwil”)</p>
+                                    <p class=" my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00</span> -Cuvânt de salut (Ana Chirița, Directoare Proiecte Strategice „Tekwil”) -Cuvânt de salut (Ana Chirița, Directoare Proiecte Strategice „Tekwil”) -Cuvânt de salut (Ana Chirița,
+                                        Directoare Proiecte Strategice „Tekwil”)</p>
 
                                 </div>
                             </li>
