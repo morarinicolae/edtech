@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css?version=1" rel="stylesheet" />
     <!-- font gilroy-->
     <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
 
@@ -45,133 +45,7 @@
                 </ul>
 
                 <!-- Inregistrare-->
-                <!-- Button to open the modal -->
 
-                <!-- The Modal (contains the Sign Up form) -->
-                <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
-
-                    <div class="card bg-light">
-                        <article class="card-body mx-auto">
-                            <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-close-16.png">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><i class="fa-solid fa-xmark"></i></span>
-
-                            <h4 class="card-title mt-3 text-center">Înregistrare la eveniment!</h4>
-                            <p class="text-center">Complectați cu atențiune fiecare formular</p>
-                            <form name="google-sheet">
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <input name="name" class="form-control" placeholder="Nume Prenume" type="text">
-                                </div>
-                                <!-- form-group// -->
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <input name="institution" class="form-control" placeholder="Instituția de învățământ: " type="text">
-                                </div>
-                                <!-- form-group// -->
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <input name="region" class="form-control" placeholder="Raion/Regiune" type="text">
-                                </div>
-                                <!-- form-group// -->
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <input name="place" class="form-control" placeholder="Localitatea (satul/orașul)" type="text">
-                                </div>
-                                <!-- form-group// -->
-
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <input name="phone" class="form-control" placeholder="Număr de contact:" type="text">
-                                </div>
-                                <!-- form-group// -->
-
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <input name="email" class="form-control" placeholder="Adresă de e-mail: " type="email">
-                                </div>
-                                <!-- form-group// -->
-
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <select name="transport" id="day" onchange="myFunction()" class="form-control">
-                                        <option selected="" disabled> Aveți nevoie de transport pentru a vă deplasa la eveniment:</option>
-                                        <option value="da">Da</option>
-                                        <option value="nu">Nu</option>
-                                    </select>
-                                </div>
-                                <!-- form-group end.// -->
-
-
-
-                                <!-- form-group// -->
-
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <select name="session" id="day" onchange="myFunction()" class="form-control">
-                                        <option selected="" disabled> Selectați sesiunea la care doriți să participați:</option>
-                                        <option value="Minecraft în STEM (11:00 - 12:00; 13:30 - 14:30)">Minecraft în STEM (11:00 - 12:00; 13:30 - 14:30)</option>
-                                        <option value="Aptitudini INTEL pentru profesori 11:00– 12:00; 13:30 - 14:30">Aptitudini INTEL pentru profesori 11:00– 12:00; 13:30 - 14:30</option>
-                                        <option value="Microsoft Teams ca instrument de predare-învățare 15:00 – 17:00">Microsoft Teams ca instrument de predare-învățare 15:00 – 17:00</option>
-                                        <option value="Cum transformăm clasa tradițională în clasă inversată? 10:00 - 12:00; 13:30 - 17:00">Cum transformăm clasa tradițională în clasă inversată? 10:00 - 12:00; 13:30 - 17:00</option>
-                                        <option value="Sesiune 1 TAK 10:00 - 11:30">Sesiune 1 TAK 10:00 - 11:30</option>
-                                        <option value="Sesiune 2 TAK 12:00 - 13:30">Sesiune 2 TAK 12:00 - 13:30</option>
-                                        <option value="Sesiune 3 TAK 14:00 - 15:30">Sesiune 3 TAK 14:00 - 15:30</option>
-                                        <option value="Sesiune 4 TAK 16:00 - 17:30">Sesiune 4 TAK 16:00 - 17:30</option>
-                                    </select>
-                                </div>
-
-
-                                <!-- form-group// -->
-
-                                <div class="form-group input-group">
-                                    <!--aici au fost iconite pentru inregistrare-->
-                                    <select name="discussion" id="day" onchange="myFunction()" class="form-control">
-                                        <option selected="" disabled> Selectați panelul de discuții la care doriți să participați:</option>
-                                        <option value="“Teaching for the future” (14:00 - 15:00)">“Teaching for the future” (14:00 - 15:00)</option>
-                                        <option value="Panel de discuții “Clasa Inversată” (15:00 - 16:00)">Panel de discuții “Clasa Inversată” (15:00 - 16:00)</option>
-                                    </select>
-
-                                </div>
-                                <br></br>
-
-
-
-                                <!-- form-group end.// -->
-
-                                <!-- form-group// -->
-
-                                <div>
-                                    <button class="btn btn-primary" type="submit">Înregistrare</button>
-                                    <button class="btn btn-primary" type="reset">Sterge tot</button>
-
-                                </div>
-                            </form>
-                        </article>
-                    </div>
-                </div>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script>
-                    const scriptURL = "https://script.google.com/macros/s/AKfycbx69cCvLIMOQYCSXo_gcBdf7ZGYHTg9vpB-8ap35TVUO-UOpIgoZRj2ImQtzp0mur9i/exec"
-                    const form = document.forms['google-sheet']
-
-                    form.addEventListener('submit', e => {
-                        e.preventDefault()
-                        fetch(scriptURL, {
-                                method: 'POST',
-                                body: new FormData(form)
-                            })
-                            .then(response => {
-                                document.getElementById("id01").style.display = "none";
-                                form.reset();
-                                alert("Multumesc pentru inregistrare")
-                            })
-
-                        .catch(error => console.error('Error!', error.message))
-                    })
-                </script>
                 <!-- pana aici-->
 
             </div>
@@ -187,7 +61,7 @@
             <div class="text-block">
                 <div class="text-centru"><b>EdTech <br>Moldova</b><br>
                     <div class="text-colorat"><b>2022</b></div>
-                    <div class="text-learn"> Learn. <br>Grow.<br> Innovate!</div>
+                    <div class="text-learn"> Learn. <br>Grow.<br> Innovate.</div>
                     <div class="text-data"><b>24 Mai 2022, CAHUL</b></div>
                     <br>
 
@@ -251,6 +125,10 @@
             <!-- pana aici-->
         </div>
         <a class="btn btn-primary btn-xl text-uppercase" onclick="document.getElementById('id01').style.display='block'">Înregistrează-te</a>
+
+
+
+
 
     </header>
 
@@ -1031,6 +909,140 @@
             </div>
         </div>
     </div>
+
+    <!--inregistrare-->
+    <!-- Button to open the modal -->
+
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id01" class="modal">
+
+
+        <div class="card bg-light">
+            <article class="card-body mx-auto">
+                <div class="btn-register">
+
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <h4 class="card-title mt-3 text-center">Înregistrare la eveniment!</h4>
+                <p class="text-center">Complectați cu atențiune fiecare formular</p>
+                <form name="google-sheet">
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <input name="name" class="form-control" placeholder="Nume Prenume" type="text">
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <input name="institution" class="form-control" placeholder="Instituția de învățământ: " type="text">
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <input name="region" class="form-control" placeholder="Raion/Regiune" type="text">
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <input name="place" class="form-control" placeholder="Localitatea (satul/orașul)" type="text">
+                    </div>
+                    <!-- form-group// -->
+
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <input name="phone" class="form-control" placeholder="Număr de contact:" type="text">
+                    </div>
+                    <!-- form-group// -->
+
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <input name="email" class="form-control" placeholder="Adresă de e-mail: " type="email">
+                    </div>
+                    <!-- form-group// -->
+
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <select name="transport" id="day" onchange="myFunction()" class="form-control">
+                                        <option selected="" disabled> Aveți nevoie de transport pentru a vă deplasa la eveniment:</option>
+                                        <option value="da">Da</option>
+                                        <option value="nu">Nu</option>
+                                    </select>
+                    </div>
+                    <!-- form-group end.// -->
+                    <!-- form-group// -->
+
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <select name="session" id="day" onchange="myFunction()" class="form-control">
+                                        <option selected="" disabled> Selectați sesiunea la care doriți să participați:</option>
+                                        <option value="Minecraft în STEM (11:00 - 12:00; 13:30 - 14:30)">Minecraft în STEM (11:00 - 12:00; 13:30 - 14:30)</option>
+                                        <option value="Aptitudini INTEL pentru profesori 11:00– 12:00; 13:30 - 14:30">Aptitudini INTEL pentru profesori 11:00– 12:00; 13:30 - 14:30</option>
+                                        <option value="Microsoft Teams ca instrument de predare-învățare 15:00 – 17:00">Microsoft Teams ca instrument de predare-învățare 15:00 – 17:00</option>
+                                        <option value="Cum transformăm clasa tradițională în clasă inversată? 10:00 - 12:00; 13:30 - 17:00">Cum transformăm clasa tradițională în clasă inversată? 10:00 - 12:00; 13:30 - 17:00</option>
+                                        <option value="Sesiune 1 TAK 10:00 - 11:30">Sesiune 1 TAK 10:00 - 11:30</option>
+                                        <option value="Sesiune 2 TAK 12:00 - 13:30">Sesiune 2 TAK 12:00 - 13:30</option>
+                                        <option value="Sesiune 3 TAK 14:00 - 15:30">Sesiune 3 TAK 14:00 - 15:30</option>
+                                        <option value="Sesiune 4 TAK 16:00 - 17:30">Sesiune 4 TAK 16:00 - 17:30</option>
+                                    </select>
+                    </div>
+
+                    <!-- form-group// -->
+
+                    <div class="form-group input-group">
+                        <!--aici au fost iconite pentru inregistrare-->
+                        <select name="discussion" id="day" onchange="myFunction()" class="form-control">
+                                        <option selected="" disabled> Selectați panelul de discuții la care doriți să participați:</option>
+                                        <option value="“Teaching for the future” (14:00 - 15:00)">“Teaching for the future” (14:00 - 15:00)</option>
+                                        <option value="Panel de discuții “Clasa Inversată” (15:00 - 16:00)">Panel de discuții “Clasa Inversată” (15:00 - 16:00)</option>
+                                    </select>
+
+                    </div>
+                    <br></br>
+
+                    <!-- form-group end.// -->
+
+                    <!-- form-group// -->
+
+                    <div class="btn-register">
+                        <button class="btn btn-primary" type="submit">Înregistrare</button>
+                        <button class="btn btn-primary" type="reset">Sterge tot</button>
+
+                    </div>
+                </form>
+            </article>
+        </div>
+    </div>
+
+    <!-- inregistrare buton jos-->
+
+    <!-- inregistare script 1-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbx69cCvLIMOQYCSXo_gcBdf7ZGYHTg9vpB-8ap35TVUO-UOpIgoZRj2ImQtzp0mur9i/exec"
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    document.getElementById("id01").style.display = "none";
+                    form.reset();
+                    alert("Multumesc pentru inregistrare")
+                })
+
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- inregistrare 2-->
+
+    <!-- inregistrare-->
+
+
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
