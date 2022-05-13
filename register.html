@@ -16,13 +16,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- font gilroy-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/edTech_alb_svg.svg" alt="..." /></a>
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/logo_site.svg" alt="..." /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -47,8 +50,14 @@
                 <!-- The Modal (contains the Sign Up form) -->
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+
                     <div class="card bg-light">
                         <article class="card-body mx-auto">
+                            <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-close-16.png">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><i class="fa-solid fa-xmark"></i></span>
+
                             <h4 class="card-title mt-3 text-center">Înregistrare la eveniment!</h4>
                             <p class="text-center">Complectați cu atențiune fiecare formular</p>
                             <form name="google-sheet">
@@ -169,20 +178,41 @@
         </div>
     </nav>
     <!-- Masthead-->
+
     <header class="masthead">
+
         <div class="container">
-            <br></br><br></br><br></br><br></br><br></br><br></br>
-            <div class="masthead-heading text-uppercase">EDTECH MOLDOVA 2022
-                <div class="masthead-subheading">Learn/ Grow/ Innovate!</div>
+
+            <!--    <img class="logo" src="assets/img/EdTech_vecto.svg" />-->
+            <div class="text-block">
+                <div class="text-centru"><b>EdTech <br>Moldova</b><br>
+                    <div class="text-colorat"><b>2022</b></div>
+                    <div class="text-learn"> Learn. <br>Grow.<br> Innovate!</div>
+                    <div class="text-data"><b>24 Mai 2022, CAHUL</b></div>
+                    <br>
+
+                </div>
+            </div>
 
 
-                <!-- countdown -->
-                <!-- Display the countdown timer in an element -->
-                <p id="demo"></p>
+            <!-- al 2-lea timer-->
 
+
+
+
+            <!-- pana aici-->
+
+
+
+            <!-- countdown -->
+            <!-- Display the countdown timer in an element -->
+            <div class="timer">
+                <p id="demo">
+
+                </p>
                 <script>
                     // Set the date we're counting down to
-                    var countDownDate = new Date("May 24, 2022 11:00:00").getTime();
+                    var countDownDate = new Date("May 24, 2022 10.:00:00").getTime();
 
                     // Update the count down every 1 second
                     var x = setInterval(function() {
@@ -199,9 +229,16 @@
                         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+
+                        //elemente javaScript
+
+
                         // Display the result in the element with id="demo"
-                        document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                            minutes + "m " + seconds + "s ";
+                        document.getElementById("demo").innerHTML =
+                            days + " zile " + '\xa0\xa0\xa0' +
+                            hours + " ore " + '\xa0\xa0\xa0' +
+                            minutes + " minute " + '\xa0\xa0\xa0' +
+                            seconds + " secunde " + '\xa0\xa0\xa0';
 
                         // If the count down is finished, write some text
                         if (distance < 0) {
@@ -210,17 +247,11 @@
                         }
                     }, 1000);
                 </script>
-                <!-- pana aici-->
             </div>
-
-
-
-
-
-            <a class="btn btn-primary btn-xl text-uppercase" onclick="document.getElementById('id01').style.display='block'">Înregistrează-te</a>
-
-            <br></br><br></br><br></br><br></br><br>
+            <!-- pana aici-->
         </div>
+        <a class="btn btn-primary btn-xl text-uppercase" onclick="document.getElementById('id01').style.display='block'">Înregistrează-te</a>
+
     </header>
 
 
@@ -228,6 +259,14 @@
     <!-- About-->
     <section class="page-section bg-light " id="about">
         <div class="container">
+
+
+
+
+
+
+
+            <!--pana aici-->
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Despre</h2>
                 <h3 class="section-subheading text-muted">Informații legat de eveniment.</h3>
@@ -267,6 +306,9 @@
     <!-- timeline-->
 
     <section class="page-section bg-light" id="agenda">
+
+
+
         <div class="container">
             <!-- aici se incepe modificarile-->
             <div class="container py-7">
@@ -274,74 +316,144 @@
                     <h2 class="section-heading text-uppercase">Agenda</h2>
                     <h3 class="section-subheading text-muted">Informații legat de eveniment.</h3>
                 </div>
-                <div class="agenda">
-                    <p class=" my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00</span> -Cuvânt de salut (Ana Chirița, Directoare Proiecte Strategice „Tekwil”)</p>
 
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 12:00 - 14:00
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h3>Deschiderea oficială</h3>
+                            Ana Chirița, Directoare Proiecte Strategice „Tekwil” <br> Iurie Țurcanu, Prim-Ministru Digitalizare<br> Reprezentant Ministerul Educației și Cercetării<br> Janis Mazeiks, Ambasadorul Uniunii Europene în Republica Moldova
+                            <br> Katarina Fried, Ambasadoarea Suediei în Republica Moldova<br> Dima-al-Khatib, Reprezentantă Rezidentă PNUD Moldova<br> Reprezentant Microsoft
+                            <br> Tatiana Alexeev, Manageră Proiect „Tekwill în Fiecare Școală”</div>
+                    </div>
                 </div>
 
-                <!-- Days -->
-                <div class="raw">
-                    <div class="col-lg2-4 mb-3" id="Friday, Nov 13th">
-                        <h4 class="mt-0 mb-3 text-dark op-8 font-weight-bold">
-                            Agenda
-                        </h4>
-
-
-                        <ul class="list-timeline list-timeline-primary">
-
-                            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                <div class="agenda">
-                                    <p class=" my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:00</span> -Cuvânt de salut (Ana Chirița, Directoare Proiecte Strategice „Tekwil”) -Cuvânt de salut (Ana Chirița, Directoare Proiecte Strategice „Tekwil”) -Cuvânt de salut (Ana Chirița,
-                                        Directoare Proiecte Strategice „Tekwil”)</p>
-
-                                </div>
-                            </li>
-
-                            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-2">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:05</span> - Cuvânt de salut (Iurie Țurcanu, Prim-Ministru Digitalizare)</p>
-                                <p class="my-0 collapse flex-fw text-uppercase text-xs text-dark op-8" id="day-2-item-2"> Talk: Wireframing / <span class="text-primary">Room 19</span> </p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:10 </span> - Reprezentant Ministerul Educației și Cercetării</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-4">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:15</span> - Cuvânt de salut (Janis Mazeiks, Ambasadorul Uniunii Europene în Republica Moldova)</p>
-                                <p class="my-0 collapse flex-fw text-uppercase text-xs text-dark op-8" id="day-2-item-4"> Talk: Big Data / <span class="text-primary">Room 19</span> </p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:20</span> - Cuvânt de salut (Katarina Fried, Ambasadoarea Suediei în Republica Moldova)</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-6">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:25</span> - Cuvânt de salut (Dima-al-Khatib, Reprezentantă Rezidentă PNUD Moldova)</p>
-                                <p class="my-0 collapse flex-fw text-uppercase text-xs text-dark op-8" id="day-2-item-6"> Talk: OpenData / <span class="text-primary">Room 31</span> </p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:30</span> - Cuvânt de salut (Reprezentant Microsoft (TBC))</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:35</span> - Prezentarea programului de transformare digitală a școlilor (Ana Chirița, Directoare Proiecte Strategice „Tekwil”)</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:45</span> - Desemnarea câștigătorilor „Hackathon: Soluții TECH pentru Mediu” (Tatiana Alexeev, Manageră Proiect „Tekwill în Fiecare Școală”)</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">12:50</span> - Anunțarea noilor beneficiari „Laborator Digital” din regiunea de SUD (Tatiana Alexeev, Manageră Proiect „Tekwill în Fiecare Școală”)</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">13:00</span> - Anunțarea noilor beneficiari „Laborator Digital” din restu țării (Tatiana Alexeev, Manageră Proiect „Tekwill în Fiecare Școală” Dima-al-Khatib, Reprezentantă Rezidentă PNUD
-                                    Moldova) </p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">14:00</span> - 1st Panel of discussion „Teaching for the Future” (Ministryl of Education and Research, INTEL, ADOBE, Moderator – Ana Chirița)</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">15:30</span> - 2nd Panel of discussion „Flipped Classroom” (Casa Profesorului, Anatol Grimalschi, Ministry of Education and Research Moderator – Tatiana Alexeev)</p>
-                            </li>
-                            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column">
-                                <p class="my-0 text-dark flex-fw text-sm text-uppercase"><span class="text-inverse op-8">16:30</span> - Closing Remarks + AfterParty</p>
-                            </li>
-                        </ul>
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 14:00 - 15:30
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h3>Panel de discuții</h3>
+                            „Teaching for the future”<br> Ministryl of Education and Research, INTEL, ADOBE<br> Moderator – Ana Chirița</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 15:30 - 17:00
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h3>Panel de discuții</h3>
+                            “Clasa Inversată”<br> Casa Profesorului, Anatol Grimalschi, Ministerul Educației și Cercetării</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 10:00 - 12:00
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>„Minecraft în STEM”, Microsoft</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 10:00 - 12:00
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>„Microsoft TEAM ca instrument de predare învățare”, Microsoft</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 10:00 - 17:00
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>Sesiune „Clasa Inversată”, Tekwill în Fiecare Școală</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 10:00 - 11:30
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>Sesiune 1 „Tekwill Academy Kids”</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 13:30 - 17:00
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>„Intel Skills for Teachers Program”</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 12:00 - 13:30
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>Sesiune 2 „Tekwill Academy Kids”</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 14:00 - 15:30
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>Sesiune 3 „Tekwill Academy Kids”</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-card">
+                    <div class="row">
+                        <div class="col-sm-3 col-12">
+                            <div class="agenda-ora"><i class="fa-solid fa-clock"></i> 16:00 - 17:30
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-12">
+                            <h4>Sesiune 4 „Tekwill Academy Kids” </h4>
+                        </div>
+                    </div>
+                </div>
+                <!--agenda finala-->
+
 
     </section>
     <!-- pana aici time line-->
@@ -531,6 +643,36 @@
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
             <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                        <h4>Parveen Anand</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                        <h4>Parveen Anand</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                        <h4>Parveen Anand</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
