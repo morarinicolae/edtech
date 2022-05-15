@@ -653,11 +653,13 @@
     .img-fluid {
         max-width: 100%;
         height: auto;
+        border-radius: 20px;
     }
     
     .img-fluiddd {
         max-width: 500px;
         height: auto;
+        border-radius: 20px;
     }
     
     @media (max-width: 900px) {
@@ -1218,6 +1220,10 @@
         .col-md-3 {
             flex: 0 0 auto;
             width: 25%;
+        }
+        .col2-md-3 {
+            flex: 0 0 auto;
+            width: 20%;
         }
         .col-md-4 {
             flex: 0 0 auto;
@@ -11617,7 +11623,7 @@
     }
     
     .img-brand {
-        height: 2.75rem;
+        height: 100%;
     }
     
     section#contact {
@@ -12188,4 +12194,25 @@
     
     .text-inregistrare {
         color: #000;
+    }
+    
+    .fa2-4x {
+        font-size: 10em;
+    }
+    
+    .col2-md-4 {
+        flex: 0 0 auto;
+        width: 49.333333%;
+    }
+    
+    @media (max-width: 900px) {
+        .col2-md-4 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+    
+    .img-fluid2 {
+        max-width: 8rem;
+        height: auto;
     }
