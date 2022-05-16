@@ -661,6 +661,7 @@
         max-width: 100%;
         height: auto;
         border-radius: 20px;
+        display: flex;
     }
 
     @media (max-width: 900px) {
@@ -1243,6 +1244,15 @@
             flex: 0 0 auto;
             width: 20%;
         }
+    
+        @media (max-width: 900px) {
+            .col2-md-3 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+
+
         .col-md-4 {
             flex: 0 0 auto;
             width: 33.33333333%;
@@ -3110,7 +3120,7 @@
     }
     
     .btn-primary:hover {
-        color: #fff;
+        color: black;
         background-color: #f7ef34;
         border-color: #7bb5ff87;
     }
@@ -7933,6 +7943,7 @@
     .my-3 {
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
+        display: flex;
     }
     
     .my-4 {
@@ -11278,7 +11289,7 @@
         #mainNav.navbar-shrink {
             padding-top: 1rem;
             padding-bottom: 1rem;
-            background-color: #212529;
+            background-color: #7bb5ff;
         }
         #mainNav.navbar-shrink .navbar-brand {
             font-size: 1.25em;
@@ -11417,6 +11428,7 @@
     
     .portfolio-modal .modal-content p {
         margin-bottom: 2rem;
+        text-align: left;
     }
     
     .portfolio-modal .modal-content ul.list-inline {
@@ -12157,7 +12169,8 @@
     }
     
     .agenda-ora {
-        border-right: 3px solid blue;
+        border-right: 3px solid ;
+        border-color: #7bb5ff;
         font-size: 1.25rem;
         margin-bottom: 20px;
     }
@@ -12239,6 +12252,12 @@
     }
     
     .img-fluid2 {
-        max-width: 8rem;
-        height: auto;
+        max-width: 12rem;
+        height: 3rem;
+    }
+    
+    
+    .img-fluid3 {
+        max-width: 10rem;
+        height: 4rem;
     }
