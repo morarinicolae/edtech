@@ -655,6 +655,22 @@
         height: auto;
         border-radius: 20px;
     }
+
+
+    .img-fluidd2 {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    @media (max-width: 900px) {
+        .img-fluidd2{
+            max-width: 80%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+
     
     .img-fluiddd {
         max-width: 500px;
@@ -673,6 +689,7 @@
         max-width: 500px;
         height: auto;
         margin-left: -410px;
+        border-radius: 20px;
     }
     
     @media (max-width: 900px) {
@@ -680,6 +697,7 @@
             max-width: 100%;
             height: auto;
             margin-left: 0px;
+            border-radius: 20px;
         }
     }
     
@@ -8406,6 +8424,14 @@
         --bs-text-opacity: 1;
         color: #6c757d !important;
     }
+
+    .text-muted2 {
+        --bs-text-opacity: 1;
+        color: #6c757d !important;
+        text-align: left;
+    }
+
+
     
     .text-black-50 {
         --bs-text-opacity: 1;
