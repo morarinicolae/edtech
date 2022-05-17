@@ -674,7 +674,7 @@
 
     
     .img-fluiddd {
-        max-width: 500px;
+        max-width: 600px;
         height: auto;
         border-radius: 20px;
     }
@@ -687,9 +687,9 @@
     }
     
     .img-fluidd {
-        max-width: 500px;
+        max-width: 600px;
         height: auto;
-        margin-left: -410px;
+        margin-left: -460px;
         border-radius: 20px;
     }
     
@@ -839,7 +839,7 @@
     
     .row-cols-6>* {
         flex: 0 0 auto;
-        width: 16.6666666667%;
+        width: 16666666667%;
     }
     
     .col-auto {
@@ -11192,6 +11192,10 @@
     .page-section {
         padding: 6rem 0;
     }
+
+    .page2-section {
+        padding: 3rem 0;
+    }
     
     .page-section h2.section-heading,
     .page-section .section-heading.h2 {
@@ -11235,7 +11239,7 @@
     #mainNav {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        background-color: #212529;
+        background-color: #7bb5ff;
     }
     
     #mainNav .navbar-toggler {
@@ -11428,7 +11432,7 @@
     
     .portfolio-modal .modal-content p {
         margin-bottom: 2rem;
-        text-align: left;
+        text-align: justify;
     }
     
     .portfolio-modal .modal-content ul.list-inline {
@@ -11665,7 +11669,7 @@
     }
     
     section#contact {
-        background-color: #212529;
+        background-color: #7bb5ff;
         background-image: url("../assets/img/map-image.png");
         background-repeat: no-repeat;
         background-position: center;
