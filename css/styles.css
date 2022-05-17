@@ -3430,8 +3430,8 @@
     
     .btn-dark {
         color: #fff;
-        background-color: #212529;
-        border-color: #212529;
+        background-color: #7bb5ff;
+      
     }
     
     .btn-dark:hover {
@@ -7771,7 +7771,7 @@
     }
     
     .align-items-center {
-        align-items: center !important;
+        align-items: baseline;
     }
     
     .align-items-baseline {
@@ -7943,7 +7943,14 @@
     .my-3 {
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
-        display: flex;
+        
+    }
+    @media (max-width: 900px) {
+        .my-3 {
+            margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
+            display: flex;
+        }
     }
     
     .my-4 {
@@ -12165,8 +12172,21 @@
         height: auto;
     }
     
-    .agenda-card {
-        background-color: #d2daed3b;
+    .agenda-card-deschidere {
+        background-color: #f0f0ab ;
+        padding: 20px 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }  
+    .agenda-card-paneluri {
+        background-color: #7bb5ff ;
+        padding: 20px 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+  
+    .agenda-card-sesiuni {
+        background-color: #EEEEEE;
         padding: 20px 20px;
         border-radius: 5px;
         margin-bottom: 20px;
@@ -12242,6 +12262,11 @@
     .fa2-4x {
         font-size: 10em;
     }
+    @media (max-width: 900px) {
+        .fa2-4x {
+            font-size: 8em;
+        }
+    }
     
     .col2-md-4 {
         flex: 0 0 auto;
@@ -12259,9 +12284,28 @@
         max-width: 12rem;
         height: 3rem;
     }
+
+    .img-fluid-cahul {
+        max-width: 12rem;
+        height: 3rem;
+    }
     
     
     .img-fluid3 {
         max-width: 10rem;
         height: 4rem;
+    }
+
+    .page3-section{
+        
+            
+            padding-bottom: 6rem;
+            text-align: center;
+            color: #fff;
+            background-image: url("../assets/img/logos/footer_donatori2.png");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        
     }
