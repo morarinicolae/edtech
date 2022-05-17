@@ -12173,13 +12173,13 @@
     }
     
     .agenda-card-deschidere {
-        background-color: #f0f0ab ;
+        background-color: #e3f0fa ;
         padding: 20px 20px;
         border-radius: 5px;
         margin-bottom: 20px;
     }  
     .agenda-card-paneluri {
-        background-color: #7bb5ff ;
+        background-color: #e3f0fa ;
         padding: 20px 20px;
         border-radius: 5px;
         margin-bottom: 20px;
@@ -12296,9 +12296,7 @@
         height: 4rem;
     }
 
-    .page3-section{
-        
-            
+    .page3-section{      
             padding-bottom: 6rem;
             text-align: center;
             color: #fff;
@@ -12308,4 +12306,18 @@
             background-position: center center;
             background-size: cover;
         
+    }
+
+    @media (max-width: 765px) {
+       .page3-section{      
+            padding-bottom: 170%;
+            text-align: center;
+            color: #fff;
+            background-image: url("../assets/img/logos/footer_mobile.png");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        
+    }
     }
